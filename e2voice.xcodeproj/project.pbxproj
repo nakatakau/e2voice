@@ -3,27 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		78B5C99326DE420D00F27A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5C99226DE420D00F27A20 /* AppDelegate.swift */; };
 		78B5C99526DE420D00F27A20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5C99426DE420D00F27A20 /* SceneDelegate.swift */; };
-		78B5C99726DE420D00F27A20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5C99626DE420D00F27A20 /* ViewController.swift */; };
 		78B5C99A26DE420D00F27A20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B5C99826DE420D00F27A20 /* Main.storyboard */; };
 		78B5C99C26DE420D00F27A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B5C99B26DE420D00F27A20 /* Assets.xcassets */; };
 		78B5C99F26DE420D00F27A20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B5C99D26DE420D00F27A20 /* LaunchScreen.storyboard */; };
+		78D72AA626DE73E100694AD8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D72AA526DE73E100694AD8 /* LoginViewController.swift */; };
+		78D72AA826DE79A900694AD8 /* LoginViewAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 78D72AA726DE79A900694AD8 /* LoginViewAnimation.json */; };
+		78D72AAB26DE7AB400694AD8 /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D72AAA26DE7AB400694AD8 /* LottieAnimation.swift */; };
+		AD4D15DF5B79E2BC496D9CBF /* Pods_e2voice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B293DF4C4BDCDFC152B918 /* Pods_e2voice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6CC5F22BA9F29DA1D59D05B5 /* Pods-e2voice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e2voice.release.xcconfig"; path = "Target Support Files/Pods-e2voice/Pods-e2voice.release.xcconfig"; sourceTree = "<group>"; };
 		78B5C98F26DE420D00F27A20 /* e2voice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = e2voice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B5C99226DE420D00F27A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78B5C99426DE420D00F27A20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78B5C99626DE420D00F27A20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78B5C99926DE420D00F27A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78B5C99B26DE420D00F27A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78B5C99E26DE420D00F27A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78B5C9A026DE420D00F27A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78D72AA526DE73E100694AD8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		78D72AA726DE79A900694AD8 /* LoginViewAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoginViewAnimation.json; sourceTree = "<group>"; };
+		78D72AAA26DE7AB400694AD8 /* LottieAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimation.swift; sourceTree = "<group>"; };
+		A0B293DF4C4BDCDFC152B918 /* Pods_e2voice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_e2voice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20B6F9E69C059CE163CCBD2 /* Pods-e2voice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e2voice.debug.xcconfig"; path = "Target Support Files/Pods-e2voice/Pods-e2voice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4D15DF5B79E2BC496D9CBF /* Pods_e2voice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E4364B5AFE87479D63B8B36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B20B6F9E69C059CE163CCBD2 /* Pods-e2voice.debug.xcconfig */,
+				6CC5F22BA9F29DA1D59D05B5 /* Pods-e2voice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		19373E463D704BE02B52E27A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0B293DF4C4BDCDFC152B918 /* Pods_e2voice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		78B5C98626DE420D00F27A20 = {
 			isa = PBXGroup;
 			children = (
 				78B5C99126DE420D00F27A20 /* e2voice */,
 				78B5C99026DE420D00F27A20 /* Products */,
+				0E4364B5AFE87479D63B8B36 /* Pods */,
+				19373E463D704BE02B52E27A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +97,7 @@
 			children = (
 				78B5C99426DE420D00F27A20 /* SceneDelegate.swift */,
 				78B5C99226DE420D00F27A20 /* AppDelegate.swift */,
+				78D72AAA26DE7AB400694AD8 /* LottieAnimation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -76,6 +105,7 @@
 		78B5C9A726DE502500F27A20 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				78D72AA926DE79DB00694AD8 /* LottieAnimation */,
 				78B5C99B26DE420D00F27A20 /* Assets.xcassets */,
 				78B5C99D26DE420D00F27A20 /* LaunchScreen.storyboard */,
 				78B5C99826DE420D00F27A20 /* Main.storyboard */,
@@ -86,9 +116,17 @@
 		78B5C9A826DE504700F27A20 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				78B5C99626DE420D00F27A20 /* ViewController.swift */,
+				78D72AA526DE73E100694AD8 /* LoginViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		78D72AA926DE79DB00694AD8 /* LottieAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				78D72AA726DE79A900694AD8 /* LoginViewAnimation.json */,
+			);
+			path = LottieAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78B5C9A326DE420D00F27A20 /* Build configuration list for PBXNativeTarget "e2voice" */;
 			buildPhases = (
+				7FD08672A671271A5D89B486 /* [CP] Check Pods Manifest.lock */,
 				78B5C98B26DE420D00F27A20 /* Sources */,
 				78B5C98C26DE420D00F27A20 /* Frameworks */,
 				78B5C98D26DE420D00F27A20 /* Resources */,
+				4438EE6144B31449D2CA6508 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78B5C99F26DE420D00F27A20 /* LaunchScreen.storyboard in Resources */,
+				78D72AA826DE79A900694AD8 /* LoginViewAnimation.json in Resources */,
 				78B5C99C26DE420D00F27A20 /* Assets.xcassets in Resources */,
 				78B5C99A26DE420D00F27A20 /* Main.storyboard in Resources */,
 			);
@@ -156,12 +197,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4438EE6144B31449D2CA6508 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-e2voice/Pods-e2voice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-e2voice/Pods-e2voice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-e2voice/Pods-e2voice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FD08672A671271A5D89B486 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-e2voice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		78B5C98B26DE420D00F27A20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78B5C99726DE420D00F27A20 /* ViewController.swift in Sources */,
+				78D72AA626DE73E100694AD8 /* LoginViewController.swift in Sources */,
+				78D72AAB26DE7AB400694AD8 /* LottieAnimation.swift in Sources */,
 				78B5C99326DE420D00F27A20 /* AppDelegate.swift in Sources */,
 				78B5C99526DE420D00F27A20 /* SceneDelegate.swift in Sources */,
 			);
@@ -307,6 +391,7 @@
 		};
 		78B5C9A426DE420D00F27A20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B20B6F9E69C059CE163CCBD2 /* Pods-e2voice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +411,7 @@
 		};
 		78B5C9A526DE420D00F27A20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CC5F22BA9F29DA1D59D05B5 /* Pods-e2voice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
