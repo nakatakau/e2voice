@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		784A8C6B26DFFD5700EAB94D /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A8C6A26DFFD5700EAB94D /* UIComponents.swift */; };
+		784A8C6D26DFFFC200EAB94D /* UIFontAndColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A8C6C26DFFFC200EAB94D /* UIFontAndColor.swift */; };
+		784A8C6F26E024FC00EAB94D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A8C6E26E024FC00EAB94D /* SignInViewController.swift */; };
+		784A8C7126E0252400EAB94D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A8C7026E0252400EAB94D /* SignUpViewController.swift */; };
+		787D9B4526E2DC5E00C21DAE /* SignUpViewAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 787D9B4426E2DC5E00C21DAE /* SignUpViewAnimation.json */; };
+		787D9B4726E3751A00C21DAE /* SignUpView2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D9B4626E3751A00C21DAE /* SignUpView2Controller.swift */; };
+		787D9B4926E37F1300C21DAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 787D9B4826E37F1300C21DAE /* GoogleService-Info.plist */; };
+		787D9B4B26E3835400C21DAE /* SignUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D9B4A26E3835400C21DAE /* SignUpData.swift */; };
+		787D9B4D26E3899200C21DAE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D9B4C26E3899200C21DAE /* Alert.swift */; };
+		7892139826E9E6BB00BE0EC8 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892139726E9E6BB00BE0EC8 /* MainMenuViewController.swift */; };
+		7892139A26E9E72D00BE0EC8 /* CompletionSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892139926E9E72D00BE0EC8 /* CompletionSignUpViewController.swift */; };
 		78B5C99326DE420D00F27A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5C99226DE420D00F27A20 /* AppDelegate.swift */; };
 		78B5C99526DE420D00F27A20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5C99426DE420D00F27A20 /* SceneDelegate.swift */; };
 		78B5C99A26DE420D00F27A20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B5C99826DE420D00F27A20 /* Main.storyboard */; };
@@ -20,6 +31,17 @@
 
 /* Begin PBXFileReference section */
 		6CC5F22BA9F29DA1D59D05B5 /* Pods-e2voice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e2voice.release.xcconfig"; path = "Target Support Files/Pods-e2voice/Pods-e2voice.release.xcconfig"; sourceTree = "<group>"; };
+		784A8C6A26DFFD5700EAB94D /* UIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponents.swift; sourceTree = "<group>"; };
+		784A8C6C26DFFFC200EAB94D /* UIFontAndColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontAndColor.swift; sourceTree = "<group>"; };
+		784A8C6E26E024FC00EAB94D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		784A8C7026E0252400EAB94D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		787D9B4426E2DC5E00C21DAE /* SignUpViewAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SignUpViewAnimation.json; sourceTree = "<group>"; };
+		787D9B4626E3751A00C21DAE /* SignUpView2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView2Controller.swift; sourceTree = "<group>"; };
+		787D9B4826E37F1300C21DAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		787D9B4A26E3835400C21DAE /* SignUpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpData.swift; sourceTree = "<group>"; };
+		787D9B4C26E3899200C21DAE /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		7892139726E9E6BB00BE0EC8 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		7892139926E9E72D00BE0EC8 /* CompletionSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionSignUpViewController.swift; sourceTree = "<group>"; };
 		78B5C98F26DE420D00F27A20 /* e2voice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = e2voice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B5C99226DE420D00F27A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78B5C99426DE420D00F27A20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +85,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		787D9B4E26E44EBF00C21DAE /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				787D9B4A26E3835400C21DAE /* SignUpData.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		787D9B4F26E44EE100C21DAE /* ComponentsAndColor */ = {
+			isa = PBXGroup;
+			children = (
+				787D9B4C26E3899200C21DAE /* Alert.swift */,
+				784A8C6C26DFFFC200EAB94D /* UIFontAndColor.swift */,
+				784A8C6A26DFFD5700EAB94D /* UIComponents.swift */,
+			);
+			path = ComponentsAndColor;
+			sourceTree = "<group>";
+		};
+		787D9B5026E44F2C00C21DAE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				78D72AA526DE73E100694AD8 /* LoginViewController.swift */,
+				784A8C7026E0252400EAB94D /* SignUpViewController.swift */,
+				7892139926E9E72D00BE0EC8 /* CompletionSignUpViewController.swift */,
+				784A8C6E26E024FC00EAB94D /* SignInViewController.swift */,
+				787D9B4626E3751A00C21DAE /* SignUpView2Controller.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7892139626E9E62400BE0EC8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7892139726E9E6BB00BE0EC8 /* MainMenuViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		78B5C98626DE420D00F27A20 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +148,9 @@
 				78B5C9A726DE502500F27A20 /* View */,
 				78B5C9A826DE504700F27A20 /* Controller */,
 				78B5C9A026DE420D00F27A20 /* Info.plist */,
+				787D9B4826E37F1300C21DAE /* GoogleService-Info.plist */,
+				78B5C99426DE420D00F27A20 /* SceneDelegate.swift */,
+				78B5C99226DE420D00F27A20 /* AppDelegate.swift */,
 			);
 			path = e2voice;
 			sourceTree = "<group>";
@@ -95,8 +158,8 @@
 		78B5C9A626DE500700F27A20 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				78B5C99426DE420D00F27A20 /* SceneDelegate.swift */,
-				78B5C99226DE420D00F27A20 /* AppDelegate.swift */,
+				787D9B4F26E44EE100C21DAE /* ComponentsAndColor */,
+				787D9B4E26E44EBF00C21DAE /* Class */,
 				78D72AAA26DE7AB400694AD8 /* LottieAnimation.swift */,
 			);
 			path = Model;
@@ -116,7 +179,8 @@
 		78B5C9A826DE504700F27A20 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				78D72AA526DE73E100694AD8 /* LoginViewController.swift */,
+				7892139626E9E62400BE0EC8 /* Main */,
+				787D9B5026E44F2C00C21DAE /* Login */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -125,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				78D72AA726DE79A900694AD8 /* LoginViewAnimation.json */,
+				787D9B4426E2DC5E00C21DAE /* SignUpViewAnimation.json */,
 			);
 			path = LottieAnimation;
 			sourceTree = "<group>";
@@ -192,6 +257,8 @@
 				78D72AA826DE79A900694AD8 /* LoginViewAnimation.json in Resources */,
 				78B5C99C26DE420D00F27A20 /* Assets.xcassets in Resources */,
 				78B5C99A26DE420D00F27A20 /* Main.storyboard in Resources */,
+				787D9B4526E2DC5E00C21DAE /* SignUpViewAnimation.json in Resources */,
+				787D9B4926E37F1300C21DAE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,10 +311,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7892139826E9E6BB00BE0EC8 /* MainMenuViewController.swift in Sources */,
+				784A8C6F26E024FC00EAB94D /* SignInViewController.swift in Sources */,
+				787D9B4726E3751A00C21DAE /* SignUpView2Controller.swift in Sources */,
+				784A8C6B26DFFD5700EAB94D /* UIComponents.swift in Sources */,
+				784A8C7126E0252400EAB94D /* SignUpViewController.swift in Sources */,
 				78D72AA626DE73E100694AD8 /* LoginViewController.swift in Sources */,
+				784A8C6D26DFFFC200EAB94D /* UIFontAndColor.swift in Sources */,
 				78D72AAB26DE7AB400694AD8 /* LottieAnimation.swift in Sources */,
 				78B5C99326DE420D00F27A20 /* AppDelegate.swift in Sources */,
+				787D9B4D26E3899200C21DAE /* Alert.swift in Sources */,
 				78B5C99526DE420D00F27A20 /* SceneDelegate.swift in Sources */,
+				787D9B4B26E3835400C21DAE /* SignUpData.swift in Sources */,
+				7892139A26E9E72D00BE0EC8 /* CompletionSignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.e2voice.e2voice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -425,7 +501,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.e2voice.e2voice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

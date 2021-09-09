@@ -1,13 +1,13 @@
 //
-//  SignUpView2Controller.swift
+//  MainMenuViewController.swift
 //  e2voice
 //
-//  Created by 中村拓磨 on 2021/09/04.
+//  Created by 中村拓磨 on 2021/09/09.
 //
 
 import UIKit
 
-class SignUpView2Controller: UIViewController {
+class MainMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
