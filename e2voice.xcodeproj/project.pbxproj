@@ -23,9 +23,14 @@
 		78B5C99A26DE420D00F27A20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B5C99826DE420D00F27A20 /* Main.storyboard */; };
 		78B5C99C26DE420D00F27A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B5C99B26DE420D00F27A20 /* Assets.xcassets */; };
 		78B5C99F26DE420D00F27A20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B5C99D26DE420D00F27A20 /* LaunchScreen.storyboard */; };
+		78D138ED26F34EE800AADE43 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D138EC26F34EE800AADE43 /* MenuViewController.swift */; };
+		78D138EF26F34F6800AADE43 /* AllergyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D138EE26F34F6800AADE43 /* AllergyViewController.swift */; };
+		78D138F126F3503D00AADE43 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D138F026F3503D00AADE43 /* EditProfileViewController.swift */; };
 		78D72AA626DE73E100694AD8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D72AA526DE73E100694AD8 /* LoginViewController.swift */; };
 		78D72AA826DE79A900694AD8 /* LoginViewAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 78D72AA726DE79A900694AD8 /* LoginViewAnimation.json */; };
 		78D72AAB26DE7AB400694AD8 /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D72AAA26DE7AB400694AD8 /* LottieAnimation.swift */; };
+		78DBF91226EE124B004CF8EC /* MainMenuAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 78DBF91126EE124B004CF8EC /* MainMenuAnimation.json */; };
+		78DBF91626EF5C58004CF8EC /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBF91526EF5C58004CF8EC /* MainCollectionViewCell.swift */; };
 		AD4D15DF5B79E2BC496D9CBF /* Pods_e2voice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B293DF4C4BDCDFC152B918 /* Pods_e2voice.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,9 +54,14 @@
 		78B5C99B26DE420D00F27A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78B5C99E26DE420D00F27A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78B5C9A026DE420D00F27A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78D138EC26F34EE800AADE43 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		78D138EE26F34F6800AADE43 /* AllergyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergyViewController.swift; sourceTree = "<group>"; };
+		78D138F026F3503D00AADE43 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		78D72AA526DE73E100694AD8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		78D72AA726DE79A900694AD8 /* LoginViewAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoginViewAnimation.json; sourceTree = "<group>"; };
 		78D72AAA26DE7AB400694AD8 /* LottieAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimation.swift; sourceTree = "<group>"; };
+		78DBF91126EE124B004CF8EC /* MainMenuAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainMenuAnimation.json; sourceTree = "<group>"; };
+		78DBF91526EF5C58004CF8EC /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		A0B293DF4C4BDCDFC152B918 /* Pods_e2voice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_e2voice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20B6F9E69C059CE163CCBD2 /* Pods-e2voice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e2voice.debug.xcconfig"; path = "Target Support Files/Pods-e2voice/Pods-e2voice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +109,7 @@
 				787D9B4C26E3899200C21DAE /* Alert.swift */,
 				784A8C6C26DFFFC200EAB94D /* UIFontAndColor.swift */,
 				784A8C6A26DFFD5700EAB94D /* UIComponents.swift */,
+				78DBF91526EF5C58004CF8EC /* MainCollectionViewCell.swift */,
 			);
 			path = ComponentsAndColor;
 			sourceTree = "<group>";
@@ -119,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				7892139726E9E6BB00BE0EC8 /* MainMenuViewController.swift */,
+				78D138EE26F34F6800AADE43 /* AllergyViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -179,16 +191,35 @@
 		78B5C9A826DE504700F27A20 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				78D138F426F3508000AADE43 /* Edit */,
+				78D138F326F3505D00AADE43 /* Menu */,
 				7892139626E9E62400BE0EC8 /* Main */,
 				787D9B5026E44F2C00C21DAE /* Login */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		78D138F326F3505D00AADE43 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				78D138EC26F34EE800AADE43 /* MenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		78D138F426F3508000AADE43 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				78D138F026F3503D00AADE43 /* EditProfileViewController.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
 		78D72AA926DE79DB00694AD8 /* LottieAnimation */ = {
 			isa = PBXGroup;
 			children = (
 				78D72AA726DE79A900694AD8 /* LoginViewAnimation.json */,
+				78DBF91126EE124B004CF8EC /* MainMenuAnimation.json */,
 				787D9B4426E2DC5E00C21DAE /* SignUpViewAnimation.json */,
 			);
 			path = LottieAnimation;
@@ -257,6 +288,7 @@
 				78D72AA826DE79A900694AD8 /* LoginViewAnimation.json in Resources */,
 				78B5C99C26DE420D00F27A20 /* Assets.xcassets in Resources */,
 				78B5C99A26DE420D00F27A20 /* Main.storyboard in Resources */,
+				78DBF91226EE124B004CF8EC /* MainMenuAnimation.json in Resources */,
 				787D9B4526E2DC5E00C21DAE /* SignUpViewAnimation.json in Resources */,
 				787D9B4926E37F1300C21DAE /* GoogleService-Info.plist in Resources */,
 			);
@@ -312,12 +344,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7892139826E9E6BB00BE0EC8 /* MainMenuViewController.swift in Sources */,
+				78D138ED26F34EE800AADE43 /* MenuViewController.swift in Sources */,
 				784A8C6F26E024FC00EAB94D /* SignInViewController.swift in Sources */,
 				787D9B4726E3751A00C21DAE /* SignUpView2Controller.swift in Sources */,
 				784A8C6B26DFFD5700EAB94D /* UIComponents.swift in Sources */,
+				78D138EF26F34F6800AADE43 /* AllergyViewController.swift in Sources */,
 				784A8C7126E0252400EAB94D /* SignUpViewController.swift in Sources */,
 				78D72AA626DE73E100694AD8 /* LoginViewController.swift in Sources */,
 				784A8C6D26DFFFC200EAB94D /* UIFontAndColor.swift in Sources */,
+				78DBF91626EF5C58004CF8EC /* MainCollectionViewCell.swift in Sources */,
+				78D138F126F3503D00AADE43 /* EditProfileViewController.swift in Sources */,
 				78D72AAB26DE7AB400694AD8 /* LottieAnimation.swift in Sources */,
 				78B5C99326DE420D00F27A20 /* AppDelegate.swift in Sources */,
 				787D9B4D26E3899200C21DAE /* Alert.swift in Sources */,

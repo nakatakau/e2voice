@@ -5,7 +5,7 @@ import Lottie
 //引数にlottieファイルを指定して、対象のUIViewControllerに描画する
 public func doLottieAnimation (fileName:String, CGRectX:CGFloat, CGRectY:CGFloat, mainView:UIViewController){
     let animationView = AnimationView(name: fileName)
-    animationView.frame.size = CGSize(width: mainView.view.bounds.width, height: mainView.view.bounds.height)
+    animationView.frame.size = CGSize(width: mainView.view.bounds.width * 0.9, height: mainView.view.bounds.height * 0.9)
     animationView.center = CGPoint(x: CGRectX, y: CGRectY)
     animationView.loopMode = .loop
     animationView.contentMode = .scaleAspectFit

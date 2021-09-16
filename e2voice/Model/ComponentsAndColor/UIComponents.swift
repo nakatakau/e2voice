@@ -47,3 +47,31 @@ public func createUITextField(text:String,CGRectX:CGFloat,CGRectY:CGFloat,mainVi
     return textField
     
 }
+
+//UICollectionViewの実装
+public func createUICollectionView(CGRectX:CGFloat,CGRectY:CGFloat,flowLayout:UICollectionViewFlowLayout,mainView:UIViewController) -> UICollectionView{
+    let frameSize = CGRect(x: CGRectX, y: CGRectY, width: mainView.view.bounds.width , height: mainView.view.bounds.height);
+    let collectionView = UICollectionView(frame:frameSize,collectionViewLayout:flowLayout)
+    collectionView.backgroundColor = .white
+    return collectionView
+}
+
+//UICollectionViewFlowLayoutの実装
+//セルサイズは画面の半分を指定
+public func createUICollectionViewFlowLayout(mainView:UIViewController) -> UICollectionViewFlowLayout{
+    let flowLayout = UICollectionViewFlowLayout()
+    //1セルあたりのサイズ
+    flowLayout.itemSize = CGSize(width: mainView.view.frame.width * 0.4 , height: mainView.view.frame.width * 0.40)
+    //セル同士の間隔
+    flowLayout.minimumInteritemSpacing = mainView.view.frame.width * 0.05
+    //セル同士の行間
+    flowLayout.minimumLineSpacing = mainView.view.frame.width * 0.05
+    //余白
+    flowLayout.sectionInset = UIEdgeInsets(
+        top: mainView.view.frame.width * 0.05,
+        left: mainView.view.frame.width * 0.05,
+        bottom: mainView.view.frame.width * 0.05,
+        right: mainView.view.frame.width * 0.05
+    )
+    return flowLayout
+}
