@@ -26,6 +26,9 @@
 		78D138ED26F34EE800AADE43 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D138EC26F34EE800AADE43 /* MenuViewController.swift */; };
 		78D138EF26F34F6800AADE43 /* AllergyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D138EE26F34F6800AADE43 /* AllergyViewController.swift */; };
 		78D138F126F3503D00AADE43 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D138F026F3503D00AADE43 /* EditProfileViewController.swift */; };
+		78D138F626F47B0900AADE43 /* MenuViewAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 78D138F526F47B0900AADE43 /* MenuViewAnimation.json */; };
+		78D138FA26F4974600AADE43 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D138F926F4974600AADE43 /* MenuCollectionViewCell.swift */; };
+		78D138FC26F5CE1200AADE43 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D138FB26F5CE1200AADE43 /* OrderViewController.swift */; };
 		78D72AA626DE73E100694AD8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D72AA526DE73E100694AD8 /* LoginViewController.swift */; };
 		78D72AA826DE79A900694AD8 /* LoginViewAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 78D72AA726DE79A900694AD8 /* LoginViewAnimation.json */; };
 		78D72AAB26DE7AB400694AD8 /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D72AAA26DE7AB400694AD8 /* LottieAnimation.swift */; };
@@ -57,6 +60,9 @@
 		78D138EC26F34EE800AADE43 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		78D138EE26F34F6800AADE43 /* AllergyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergyViewController.swift; sourceTree = "<group>"; };
 		78D138F026F3503D00AADE43 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		78D138F526F47B0900AADE43 /* MenuViewAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuViewAnimation.json; sourceTree = "<group>"; };
+		78D138F926F4974600AADE43 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		78D138FB26F5CE1200AADE43 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		78D72AA526DE73E100694AD8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		78D72AA726DE79A900694AD8 /* LoginViewAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoginViewAnimation.json; sourceTree = "<group>"; };
 		78D72AAA26DE7AB400694AD8 /* LottieAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimation.swift; sourceTree = "<group>"; };
@@ -110,6 +116,7 @@
 				784A8C6C26DFFFC200EAB94D /* UIFontAndColor.swift */,
 				784A8C6A26DFFD5700EAB94D /* UIComponents.swift */,
 				78DBF91526EF5C58004CF8EC /* MainCollectionViewCell.swift */,
+				78D138F926F4974600AADE43 /* MenuCollectionViewCell.swift */,
 			);
 			path = ComponentsAndColor;
 			sourceTree = "<group>";
@@ -203,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				78D138EC26F34EE800AADE43 /* MenuViewController.swift */,
+				78D138FB26F5CE1200AADE43 /* OrderViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -219,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				78D72AA726DE79A900694AD8 /* LoginViewAnimation.json */,
+				78D138F526F47B0900AADE43 /* MenuViewAnimation.json */,
 				78DBF91126EE124B004CF8EC /* MainMenuAnimation.json */,
 				787D9B4426E2DC5E00C21DAE /* SignUpViewAnimation.json */,
 			);
@@ -290,6 +299,7 @@
 				78B5C99A26DE420D00F27A20 /* Main.storyboard in Resources */,
 				78DBF91226EE124B004CF8EC /* MainMenuAnimation.json in Resources */,
 				787D9B4526E2DC5E00C21DAE /* SignUpViewAnimation.json in Resources */,
+				78D138F626F47B0900AADE43 /* MenuViewAnimation.json in Resources */,
 				787D9B4926E37F1300C21DAE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +363,9 @@
 				78D72AA626DE73E100694AD8 /* LoginViewController.swift in Sources */,
 				784A8C6D26DFFFC200EAB94D /* UIFontAndColor.swift in Sources */,
 				78DBF91626EF5C58004CF8EC /* MainCollectionViewCell.swift in Sources */,
+				78D138FC26F5CE1200AADE43 /* OrderViewController.swift in Sources */,
 				78D138F126F3503D00AADE43 /* EditProfileViewController.swift in Sources */,
+				78D138FA26F4974600AADE43 /* MenuCollectionViewCell.swift in Sources */,
 				78D72AAB26DE7AB400694AD8 /* LottieAnimation.swift in Sources */,
 				78B5C99326DE420D00F27A20 /* AppDelegate.swift in Sources */,
 				787D9B4D26E3899200C21DAE /* Alert.swift in Sources */,

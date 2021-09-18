@@ -8,7 +8,7 @@ public let gray   = UIColor(red: 0.7, green: 0.7, blue: 0.7, alpha: 1.0)
 
 //文字サイズ
 //普通の12pt
-public let smallFontSize = UIFont.systemFont(ofSize: 12)
+public let smallFontSize = UIFont.systemFont(ofSize: 18)
 //太字の24pt
 public let originalFontSize = UIFont.boldSystemFont(ofSize: 24)
 //太字の36pt

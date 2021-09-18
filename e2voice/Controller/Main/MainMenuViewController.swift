@@ -3,7 +3,9 @@ import FirebaseAuth
 
 class MainMenuViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate  {
 
+    //CollectionViewCellに描画するテキスト
     let cellText = ["注文","住所登録","アレルギー","ログアウト"]
+    //CollectionViewCellに描画する画像
     let imageName = ["food","house","allergy","logout"]
     
     override func viewDidLoad() {

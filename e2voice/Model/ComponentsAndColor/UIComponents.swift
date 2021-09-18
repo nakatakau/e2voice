@@ -75,3 +75,30 @@ public func createUICollectionViewFlowLayout(mainView:UIViewController) -> UICol
     )
     return flowLayout
 }
+
+//Menu用のUICollectionViewFlowLayoutの実装
+public func createMenuUICollectionViewFlowLayout(mainView:UIViewController) -> UICollectionViewFlowLayout{
+    let flowLayout = UICollectionViewFlowLayout()
+    //1セルあたりのサイズ
+    flowLayout.itemSize = CGSize(width: mainView.view.frame.width * 0.45 , height: mainView.view.frame.height * 0.4)
+    //セル同士の間隔
+    flowLayout.minimumInteritemSpacing = mainView.view.frame.width * 0.03
+    //セル同士の行間
+    flowLayout.minimumLineSpacing = mainView.view.frame.width * 0.05
+    //余白
+    flowLayout.sectionInset = UIEdgeInsets(
+        top: mainView.view.frame.width * 0,
+        left: mainView.view.frame.width * 0.03,
+        bottom: mainView.view.frame.width * 0,
+        right: mainView.view.frame.width * 0.03
+    )
+    return flowLayout
+}
+
+//navigationBarの生成
+public func createNavigationBar(safeAreaHeght:CGFloat) -> UINavigationBar{
+    let screenSize: CGRect = UIScreen.main.bounds
+    let navBar = UINavigationBar(frame: CGRect(x: 0, y:safeAreaHeght , width: screenSize.width, height: 44))
+    navBar.barTintColor = .white
+    return navBar 
+}
