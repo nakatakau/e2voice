@@ -29,6 +29,7 @@
 		78D138F626F47B0900AADE43 /* MenuViewAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 78D138F526F47B0900AADE43 /* MenuViewAnimation.json */; };
 		78D138FA26F4974600AADE43 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D138F926F4974600AADE43 /* MenuCollectionViewCell.swift */; };
 		78D138FC26F5CE1200AADE43 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D138FB26F5CE1200AADE43 /* OrderViewController.swift */; };
+		78D138FE26F5DE7800AADE43 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D138FD26F5DE7800AADE43 /* Menu.swift */; };
 		78D72AA626DE73E100694AD8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D72AA526DE73E100694AD8 /* LoginViewController.swift */; };
 		78D72AA826DE79A900694AD8 /* LoginViewAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 78D72AA726DE79A900694AD8 /* LoginViewAnimation.json */; };
 		78D72AAB26DE7AB400694AD8 /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D72AAA26DE7AB400694AD8 /* LottieAnimation.swift */; };
@@ -63,6 +64,7 @@
 		78D138F526F47B0900AADE43 /* MenuViewAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuViewAnimation.json; sourceTree = "<group>"; };
 		78D138F926F4974600AADE43 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		78D138FB26F5CE1200AADE43 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		78D138FD26F5DE7800AADE43 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		78D72AA526DE73E100694AD8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		78D72AA726DE79A900694AD8 /* LoginViewAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoginViewAnimation.json; sourceTree = "<group>"; };
 		78D72AAA26DE7AB400694AD8 /* LottieAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimation.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				784A8C6A26DFFD5700EAB94D /* UIComponents.swift */,
 				78DBF91526EF5C58004CF8EC /* MainCollectionViewCell.swift */,
 				78D138F926F4974600AADE43 /* MenuCollectionViewCell.swift */,
+				78D138FD26F5DE7800AADE43 /* Menu.swift */,
 			);
 			path = ComponentsAndColor;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				784A8C6F26E024FC00EAB94D /* SignInViewController.swift in Sources */,
 				787D9B4726E3751A00C21DAE /* SignUpView2Controller.swift in Sources */,
 				784A8C6B26DFFD5700EAB94D /* UIComponents.swift in Sources */,
+				78D138FE26F5DE7800AADE43 /* Menu.swift in Sources */,
 				78D138EF26F34F6800AADE43 /* AllergyViewController.swift in Sources */,
 				784A8C7126E0252400EAB94D /* SignUpViewController.swift in Sources */,
 				78D72AA626DE73E100694AD8 /* LoginViewController.swift in Sources */,

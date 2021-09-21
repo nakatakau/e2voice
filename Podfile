@@ -14,5 +14,6 @@ pod 'SegementSlide'
 pod 'ImpressiveNotifications'
 pod 'Firebase/Firestore'
 pod 'FirebaseFirestoreSwift'
+pod 'Firebase/Storage'
 
 end

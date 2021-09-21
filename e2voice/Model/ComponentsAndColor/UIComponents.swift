@@ -14,6 +14,34 @@ public func createUILabel(text:String,CGRectX:CGFloat,CGRectY:CGFloat,mainView:U
     mainView.view.addSubview(label)
 }
 
+//ラベルを生成し描画する関数
+//幅:画面幅,高さは48(絶対値)
+//中央位置で描画場所を決める
+public func createLeftUILabel(text:String,CGRectX:CGFloat,CGRectY:CGFloat,mainView:UIViewController,rgba:UIColor,fontSize:UIFont){
+    let label = UILabel()
+    label.frame.size = CGSize(width:mainView.view.bounds.width * 0.85, height:48)
+    label.center =  CGPoint(x: CGRectX, y: CGRectY)
+    label.text = text
+    label.textColor = rgba
+    label.font = fontSize
+    label.textAlignment = .left
+    mainView.view.addSubview(label)
+}
+
+//ラベルを生成し描画する関数
+//幅:画面幅,高さは48(絶対値)
+//中央位置で描画場所を決める
+public func createRightUILabel(text:String,CGRectX:CGFloat,CGRectY:CGFloat,mainView:UIViewController,rgba:UIColor,fontSize:UIFont){
+    let label = UILabel()
+    label.frame.size = CGSize(width:mainView.view.bounds.width * 0.85, height:48)
+    label.center =  CGPoint(x: CGRectX, y: CGRectY)
+    label.text = text
+    label.textColor = rgba
+    label.font = fontSize
+    label.textAlignment = .right
+    mainView.view.addSubview(label)
+}
+
 //ボタンを生成する関数
 //サイズは幅144, 高さ64
 public func createLoginUIButton(text:String,CGRectX:CGFloat,CGRectY:CGFloat,mainView:UIViewController,rgba:UIColor,fontSize:UIFont) -> UIButton{
@@ -24,6 +52,17 @@ public func createLoginUIButton(text:String,CGRectX:CGFloat,CGRectY:CGFloat,main
     button.titleLabel?.font =  fontSize
     button.setTitleColor(UIColor.white, for: .normal)
     button.backgroundColor = rgba
+    button.layer.cornerRadius = 10.0
+    return button
+}
+
+//UIButton
+public func createMenuUIButton() -> UIButton{
+   let button = UIButton()
+    button.setTitle("注文する", for:UIControl.State.normal)
+    button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+    button.setTitleColor(UIColor.white, for: .normal)
+    button.backgroundColor = orange
     button.layer.cornerRadius = 10.0
     return button
 }
@@ -46,6 +85,14 @@ public func createUITextField(text:String,CGRectX:CGFloat,CGRectY:CGFloat,mainVi
     
     return textField
     
+}
+
+//UIImageの生成
+public func createUIImage(imgName:String,mainView:UIViewController) -> UIImageView{
+    let image  = UIImage(named: imgName)
+    let imageView = UIImageView(image: image)
+    imageView.frame.size = CGSize(width: mainView.view.bounds.width * 0.85, height: mainView.view.bounds.width * 0.85)
+    return imageView
 }
 
 //UICollectionViewの実装
@@ -91,6 +138,25 @@ public func createMenuUICollectionViewFlowLayout(mainView:UIViewController) -> U
         left: mainView.view.frame.width * 0.03,
         bottom: mainView.view.frame.width * 0,
         right: mainView.view.frame.width * 0.03
+    )
+    return flowLayout
+}
+
+//Order用のUICollectionViewFlowLayoutの実装
+public func createOrderUICollectionViewFlowLayout(mainView:UIViewController) -> UICollectionViewFlowLayout{
+    let flowLayout = UICollectionViewFlowLayout()
+    //1セルあたりのサイズ
+    flowLayout.itemSize = CGSize(width: mainView.view.frame.width * 0.12 , height: mainView.view.frame.width * 0.12)
+    //セル同士の間隔
+    flowLayout.minimumInteritemSpacing = mainView.view.frame.width * 0.01
+    //セル同士の行間
+    flowLayout.minimumLineSpacing = mainView.view.frame.width * 0.01
+    //余白
+    flowLayout.sectionInset = UIEdgeInsets(
+        top: mainView.view.frame.width * 0,
+        left: mainView.view.frame.width * 0.05,
+        bottom: mainView.view.frame.width * 0,
+        right: mainView.view.frame.width * 0.05
     )
     return flowLayout
 }

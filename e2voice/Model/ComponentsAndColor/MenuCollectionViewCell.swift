@@ -34,18 +34,7 @@ final class MenuCollectionViewCell: UICollectionViewCell {
         menuCollectionViewCellBtnDelegate?.tapCellBtn()
     }
     
-    //CollectionView内のcellに描画するUIImageViewの作成
-    private let btn : UIButton = {
-       let button = UIButton()
-        button.setTitle("注文する", for:UIControl.State.normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        button.setTitleColor(UIColor.white, for: .normal)
-        button.backgroundColor = orange
-        button.layer.cornerRadius = 10.0
-        return button
-    }()
-    
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -59,11 +48,11 @@ final class MenuCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(menuImg)
         contentView.addSubview(title)
         contentView.addSubview(price)
-        contentView.addSubview(btn)
+//        contentView.addSubview(btn)
     }
 
     //UILabelのセットアップ
-    func setupContents(textName:String, priceTag:Int, image:UIImage) {
+    func setupContents(textName:String, priceTag:Int, image:UIImage, number:Int) {
         menuImg.image = image
         menuImg.frame.size = CGSize(width: contentView.frame.width, height: contentView.frame.width)
         menuImg.center = CGPoint(x: contentView.frame.width/2, y: contentView.frame.height*0.3)
@@ -77,10 +66,6 @@ final class MenuCollectionViewCell: UICollectionViewCell {
         price.frame.size = CGSize(width: contentView.frame.width , height: contentView.frame.height/6)
         price.center = CGPoint(x: contentView.frame.width/2, y: contentView.frame.height*0.75)
         price.text = "金額:\(priceTag)"
-        
-        btn.frame.size = CGSize(width:contentView.frame.width*0.6, height:contentView.frame.height/7)
-        btn.center = CGPoint(x: contentView.frame.width/2, y: contentView.frame.height*0.9)
-        //デリゲートメソッドを追加
-        btn.addTarget(self, action: #selector(tap), for: .touchUpInside)
+
     }
 }
