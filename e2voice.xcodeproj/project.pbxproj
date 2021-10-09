@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		783356B5270F83DE00711F4B /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783356B4270F83DE00711F4B /* UserDefault.swift */; };
+		783356B7270F9FCF00711F4B /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783356B6270F9FCF00711F4B /* PurchaseViewController.swift */; };
+		783356B9270FA6BD00711F4B /* PurchaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783356B8270FA6BD00711F4B /* PurchaseTableViewCell.swift */; };
 		784A8C6B26DFFD5700EAB94D /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A8C6A26DFFD5700EAB94D /* UIComponents.swift */; };
 		784A8C6D26DFFFC200EAB94D /* UIFontAndColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A8C6C26DFFFC200EAB94D /* UIFontAndColor.swift */; };
 		784A8C6F26E024FC00EAB94D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A8C6E26E024FC00EAB94D /* SignInViewController.swift */; };
@@ -33,13 +36,20 @@
 		78D72AA626DE73E100694AD8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D72AA526DE73E100694AD8 /* LoginViewController.swift */; };
 		78D72AA826DE79A900694AD8 /* LoginViewAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 78D72AA726DE79A900694AD8 /* LoginViewAnimation.json */; };
 		78D72AAB26DE7AB400694AD8 /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D72AAA26DE7AB400694AD8 /* LottieAnimation.swift */; };
+		78DB09552701BEAE00AA5675 /* RegisterAllergyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DB09542701BEAE00AA5675 /* RegisterAllergyCollectionViewCell.swift */; };
+		78DB09572702A18700AA5675 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DB09562702A18700AA5675 /* UserInfo.swift */; };
 		78DBF91226EE124B004CF8EC /* MainMenuAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 78DBF91126EE124B004CF8EC /* MainMenuAnimation.json */; };
 		78DBF91626EF5C58004CF8EC /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBF91526EF5C58004CF8EC /* MainCollectionViewCell.swift */; };
+		78F561442707F7E500EB9CE2 /* UserAuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F561432707F7E500EB9CE2 /* UserAuthInfo.swift */; };
+		78F56146270B5FC600EB9CE2 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56145270B5FC600EB9CE2 /* Purchase.swift */; };
 		AD4D15DF5B79E2BC496D9CBF /* Pods_e2voice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B293DF4C4BDCDFC152B918 /* Pods_e2voice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6CC5F22BA9F29DA1D59D05B5 /* Pods-e2voice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e2voice.release.xcconfig"; path = "Target Support Files/Pods-e2voice/Pods-e2voice.release.xcconfig"; sourceTree = "<group>"; };
+		783356B4270F83DE00711F4B /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		783356B6270F9FCF00711F4B /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		783356B8270FA6BD00711F4B /* PurchaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTableViewCell.swift; sourceTree = "<group>"; };
 		784A8C6A26DFFD5700EAB94D /* UIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponents.swift; sourceTree = "<group>"; };
 		784A8C6C26DFFFC200EAB94D /* UIFontAndColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontAndColor.swift; sourceTree = "<group>"; };
 		784A8C6E26E024FC00EAB94D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -68,8 +78,12 @@
 		78D72AA526DE73E100694AD8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		78D72AA726DE79A900694AD8 /* LoginViewAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoginViewAnimation.json; sourceTree = "<group>"; };
 		78D72AAA26DE7AB400694AD8 /* LottieAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimation.swift; sourceTree = "<group>"; };
+		78DB09542701BEAE00AA5675 /* RegisterAllergyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAllergyCollectionViewCell.swift; sourceTree = "<group>"; };
+		78DB09562702A18700AA5675 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		78DBF91126EE124B004CF8EC /* MainMenuAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainMenuAnimation.json; sourceTree = "<group>"; };
 		78DBF91526EF5C58004CF8EC /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		78F561432707F7E500EB9CE2 /* UserAuthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthInfo.swift; sourceTree = "<group>"; };
+		78F56145270B5FC600EB9CE2 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
 		A0B293DF4C4BDCDFC152B918 /* Pods_e2voice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_e2voice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20B6F9E69C059CE163CCBD2 /* Pods-e2voice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e2voice.debug.xcconfig"; path = "Target Support Files/Pods-e2voice/Pods-e2voice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +120,12 @@
 		787D9B4E26E44EBF00C21DAE /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				78D138FD26F5DE7800AADE43 /* Menu.swift */,
+				78F56145270B5FC600EB9CE2 /* Purchase.swift */,
+				78DB09562702A18700AA5675 /* UserInfo.swift */,
+				78F561432707F7E500EB9CE2 /* UserAuthInfo.swift */,
 				787D9B4A26E3835400C21DAE /* SignUpData.swift */,
+				783356B4270F83DE00711F4B /* UserDefault.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -114,12 +133,12 @@
 		787D9B4F26E44EE100C21DAE /* ComponentsAndColor */ = {
 			isa = PBXGroup;
 			children = (
-				787D9B4C26E3899200C21DAE /* Alert.swift */,
 				784A8C6C26DFFFC200EAB94D /* UIFontAndColor.swift */,
 				784A8C6A26DFFD5700EAB94D /* UIComponents.swift */,
 				78DBF91526EF5C58004CF8EC /* MainCollectionViewCell.swift */,
 				78D138F926F4974600AADE43 /* MenuCollectionViewCell.swift */,
-				78D138FD26F5DE7800AADE43 /* Menu.swift */,
+				78DB09542701BEAE00AA5675 /* RegisterAllergyCollectionViewCell.swift */,
+				783356B8270FA6BD00711F4B /* PurchaseTableViewCell.swift */,
 			);
 			path = ComponentsAndColor;
 			sourceTree = "<group>";
@@ -183,6 +202,7 @@
 				787D9B4F26E44EE100C21DAE /* ComponentsAndColor */,
 				787D9B4E26E44EBF00C21DAE /* Class */,
 				78D72AAA26DE7AB400694AD8 /* LottieAnimation.swift */,
+				787D9B4C26E3899200C21DAE /* Alert.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,6 +234,7 @@
 			children = (
 				78D138EC26F34EE800AADE43 /* MenuViewController.swift */,
 				78D138FB26F5CE1200AADE43 /* OrderViewController.swift */,
+				783356B6270F9FCF00711F4B /* PurchaseViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -360,16 +381,23 @@
 				78D138ED26F34EE800AADE43 /* MenuViewController.swift in Sources */,
 				784A8C6F26E024FC00EAB94D /* SignInViewController.swift in Sources */,
 				787D9B4726E3751A00C21DAE /* SignUpView2Controller.swift in Sources */,
+				78F56146270B5FC600EB9CE2 /* Purchase.swift in Sources */,
 				784A8C6B26DFFD5700EAB94D /* UIComponents.swift in Sources */,
+				783356B5270F83DE00711F4B /* UserDefault.swift in Sources */,
 				78D138FE26F5DE7800AADE43 /* Menu.swift in Sources */,
 				78D138EF26F34F6800AADE43 /* AllergyViewController.swift in Sources */,
+				783356B7270F9FCF00711F4B /* PurchaseViewController.swift in Sources */,
+				78DB09552701BEAE00AA5675 /* RegisterAllergyCollectionViewCell.swift in Sources */,
 				784A8C7126E0252400EAB94D /* SignUpViewController.swift in Sources */,
+				783356B9270FA6BD00711F4B /* PurchaseTableViewCell.swift in Sources */,
 				78D72AA626DE73E100694AD8 /* LoginViewController.swift in Sources */,
+				78DB09572702A18700AA5675 /* UserInfo.swift in Sources */,
 				784A8C6D26DFFFC200EAB94D /* UIFontAndColor.swift in Sources */,
 				78DBF91626EF5C58004CF8EC /* MainCollectionViewCell.swift in Sources */,
 				78D138FC26F5CE1200AADE43 /* OrderViewController.swift in Sources */,
 				78D138F126F3503D00AADE43 /* EditProfileViewController.swift in Sources */,
 				78D138FA26F4974600AADE43 /* MenuCollectionViewCell.swift in Sources */,
+				78F561442707F7E500EB9CE2 /* UserAuthInfo.swift in Sources */,
 				78D72AAB26DE7AB400694AD8 /* LottieAnimation.swift in Sources */,
 				78B5C99326DE420D00F27A20 /* AppDelegate.swift in Sources */,
 				787D9B4D26E3899200C21DAE /* Alert.swift in Sources */,

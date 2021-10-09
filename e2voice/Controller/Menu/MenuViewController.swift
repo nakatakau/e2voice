@@ -1,4 +1,5 @@
 import UIKit
+import FirebaseAuth
 import Firebase
 import FirebaseFirestoreSwift
 import FirebaseStorage
@@ -12,6 +13,9 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     //Menuインスタンスを格納する配列
     var menus:[Menu] = []
+    
+    //ユーザ情報
+    var userInfo:UserInfo?
     
 
     override func viewDidLoad() {
@@ -83,6 +87,7 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
         //既にあるデータは消す
         nextVC.menu.removeAll()
         nextVC.menu.append(menus[sender.tag])
+        nextVC.userInfo = self.userInfo
         self.present(nextVC, animated: true, completion: nil)
     }
     
@@ -102,13 +107,39 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
                         let decodedTask = try Firestore.Decoder().decode(Menu.self, from: document.data())
                         //変換に成功
                         print("decodetask\(decodedTask)")
-                        self.menus.append(decodedTask)
+                        for _ in 1 ..< 100 {
+                            self.menus.append(decodedTask)
+                        }
+                        self.getUserInfoFromFirestore()
                     } catch let error as NSError{
                         print("エラー:\(error)")
                     }
                 }
             }
             self.collectionView!.reloadData()
+        }
+    }
+    
+    //firestoreからデータを取得し、userInfoとuserAuthInfoにデータを格納
+    func getUserInfoFromFirestore(){
+        Auth.auth().addStateDidChangeListener { auth, user in
+            if let user = user {
+                self.db.collection("users").document(String(user.uid)).getDocument { document, error in
+                    if let err = error {
+                        //エラーが発生した際の処理
+                        print ("エラー: \(err)")
+                    }else{
+                        do{
+                            let userData = try Firestore.Decoder().decode(UserInfo.self, from: document!.data()!)
+                            //userInfoとuserAuthに取得したデータを渡す
+                            self.userInfo = userData
+                            
+                        }catch let error as NSError{
+                            print("エラー２:\(error)")
+                        }
+                    }
+                }
+            }
         }
     }
     
@@ -122,12 +153,22 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let backItem = UIBarButtonItem(title: "戻る", style: .plain, target: self, action: #selector(segueMainMenu))
         navItem.leftBarButtonItem = backItem
         
+        let nextItem = UIBarButtonItem(title: "購入画面", style: .plain, target: self, action: #selector(seguePurchase))
+        navItem.rightBarButtonItem = nextItem
+        
         navBar.setItems([navItem], animated: false)
         self.view.addSubview(navBar)
     }
     
     @objc func segueMainMenu(){
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    //購入画面へ移動
+    @objc func seguePurchase(){
+        let nextVC = storyboard?.instantiateViewController(identifier: "PurchaseView") as! PurchaseViewController
+        nextVC.modalPresentationStyle =  .fullScreen
+        self.present(nextVC, animated: true, completion: nil)
     }
     
 }

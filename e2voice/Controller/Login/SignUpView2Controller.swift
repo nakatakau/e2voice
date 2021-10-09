@@ -1,5 +1,6 @@
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 
 class SignUpView2Controller: UIViewController,UITextFieldDelegate {
 
@@ -72,13 +73,33 @@ class SignUpView2Controller: UIViewController,UITextFieldDelegate {
                 let errorMessage = self.showFirebaseSignUpEroor(error)
                 showAlert(title: "エラー", message: errorMessage, mainVC: self)
             }else{
-                //アカウント作成が成功時の処理
-                let nextVC = self.storyboard?.instantiateViewController(identifier: "CompletionSignUpView") as! CompletionSignUpViewController
-                nextVC.modalPresentationStyle = .fullScreen
-                mainVC.present(nextVC, animated: true, completion: nil)
+                print(result!.user.uid)
+                Firestore.firestore().collection("users").document(result!.user.uid).setData(
+                    [
+                        "address": "",
+                        "age"    : 0,
+                        "crab"   : false,
+                        "egg"    : false,
+                        "milk"   : false,
+                        "peanut" : false,
+                        "shrimp" : false,
+                        "soba"   : false,
+                        "wheat"  : false
+                    ]){ error in
+                        if error != nil {
+                            print(error!)
+                        }else{
+                            //collectionにデータセットができたら
+                            //アカウント作成時の成功時の処理
+                            let nextVC = self.storyboard?.instantiateViewController(identifier: "MainMenuView") as! MainMenuViewController
+                            nextVC.modalPresentationStyle = .fullScreen
+                            self.present(nextVC, animated: true, completion: nil)
+                        }
+                    }
             }
         }
     }
+    
     
     //新規登録時にエラーが発生した際のメッセージを表示
     func showFirebaseSignUpEroor(_ error:NSError) -> String{

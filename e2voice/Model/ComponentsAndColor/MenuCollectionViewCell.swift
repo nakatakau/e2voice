@@ -48,7 +48,6 @@ final class MenuCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(menuImg)
         contentView.addSubview(title)
         contentView.addSubview(price)
-//        contentView.addSubview(btn)
     }
 
     //UILabelのセットアップ

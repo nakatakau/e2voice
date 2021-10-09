@@ -128,6 +128,21 @@
             </objects>
             <point key="canvasLocation" x="5019" y="657"/>
         </scene>
+        <!--Purchase View Controller-->
+        <scene sceneID="w9j-io-Xf4">
+            <objects>
+                <viewController storyboardIdentifier="PurchaseView" id="4BO-KT-fN1" customClass="PurchaseViewController" customModule="e2voice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7mv-ZG-pMn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dah-F0-41b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RzI-DV-NR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5748" y="686"/>
+        </scene>
         <!--Menu View Controller-->
         <scene sceneID="Q4P-5C-oJq">
             <objects>

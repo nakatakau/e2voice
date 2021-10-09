@@ -1,12 +1,17 @@
 import UIKit
 import FirebaseAuth
+import Lottie
 
 class MainMenuViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate  {
 
     //CollectionViewCellに描画するテキスト
-    let cellText = ["注文","住所登録","アレルギー","ログアウト"]
+    let cellText = ["注文","ユーザー情報","アレルギー","ログアウト"]
     //CollectionViewCellに描画する画像
     let imageName = ["food","house","allergy","logout"]
+    
+    //アニメーション
+    var animationView:AnimationView? = nil
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +24,23 @@ class MainMenuViewController: UIViewController,UICollectionViewDataSource, UICol
         
         //collectionViewの描画
         setUpCollectionView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //lottieアニメーションの描画
+        animationView?.play()
+    }
+    
+    //引数にlottieファイルを指定して、対象のUIViewControllerに描画する
+    func doLottieAnimation (fileName:String, CGRectX:CGFloat, CGRectY:CGFloat, mainView:UIViewController){
+        animationView = AnimationView(name: fileName)
+        animationView?.frame.size = CGSize(width: mainView.view.bounds.width * 0.9, height: mainView.view.bounds.height * 0.9)
+        animationView?.center = CGPoint(x: CGRectX, y: CGRectY)
+        animationView?.loopMode = .loop
+        animationView?.contentMode = .scaleAspectFit
+        animationView?.animationSpeed = 1
+        mainView.view.addSubview(animationView!)
+        animationView?.play()
     }
     
 

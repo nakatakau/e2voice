@@ -11,12 +11,13 @@ public func createUILabel(text:String,CGRectX:CGFloat,CGRectY:CGFloat,mainView:U
     label.textColor = rgba
     label.font = fontSize
     label.textAlignment = NSTextAlignment.center
+    label.lineBreakMode = .byWordWrapping
     mainView.view.addSubview(label)
 }
 
 //ラベルを生成し描画する関数
 //幅:画面幅,高さは48(絶対値)
-//中央位置で描画場所を決める
+//テキストを左寄せで描画場所を決める
 public func createLeftUILabel(text:String,CGRectX:CGFloat,CGRectY:CGFloat,mainView:UIViewController,rgba:UIColor,fontSize:UIFont){
     let label = UILabel()
     label.frame.size = CGSize(width:mainView.view.bounds.width * 0.85, height:48)
@@ -25,12 +26,13 @@ public func createLeftUILabel(text:String,CGRectX:CGFloat,CGRectY:CGFloat,mainVi
     label.textColor = rgba
     label.font = fontSize
     label.textAlignment = .left
+    label.lineBreakMode = .byWordWrapping
     mainView.view.addSubview(label)
 }
 
 //ラベルを生成し描画する関数
 //幅:画面幅,高さは48(絶対値)
-//中央位置で描画場所を決める
+//テキストを右寄せで描画場所を決める
 public func createRightUILabel(text:String,CGRectX:CGFloat,CGRectY:CGFloat,mainView:UIViewController,rgba:UIColor,fontSize:UIFont){
     let label = UILabel()
     label.frame.size = CGSize(width:mainView.view.bounds.width * 0.85, height:48)
@@ -39,6 +41,7 @@ public func createRightUILabel(text:String,CGRectX:CGFloat,CGRectY:CGFloat,mainV
     label.textColor = rgba
     label.font = fontSize
     label.textAlignment = .right
+    label.lineBreakMode = .byWordWrapping
     mainView.view.addSubview(label)
 }
 
@@ -60,6 +63,17 @@ public func createLoginUIButton(text:String,CGRectX:CGFloat,CGRectY:CGFloat,main
 public func createMenuUIButton() -> UIButton{
    let button = UIButton()
     button.setTitle("注文する", for:UIControl.State.normal)
+    button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+    button.setTitleColor(UIColor.white, for: .normal)
+    button.backgroundColor = orange
+    button.layer.cornerRadius = 10.0
+    return button
+}
+
+//UIButton
+public func createRegisterUIButton() -> UIButton{
+   let button = UIButton()
+    button.setTitle("登録する", for:UIControl.State.normal)
     button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
     button.setTitleColor(UIColor.white, for: .normal)
     button.backgroundColor = orange
@@ -161,6 +175,26 @@ public func createOrderUICollectionViewFlowLayout(mainView:UIViewController) -> 
     return flowLayout
 }
 
+//Allergy登録画面用のUICollectionViewFlowLayoutの実装
+public func createRegisterAllergyCollectionView(mainView:UIViewController) -> UICollectionViewFlowLayout{
+    let flowLayout = UICollectionViewFlowLayout()
+    //1セルあたりのサイズ
+    flowLayout.itemSize = CGSize(width: mainView.view.frame.width * 0.25 , height: mainView.view.frame.width * 0.25)
+    //セル同士の間隔
+    flowLayout.minimumInteritemSpacing = mainView.view.frame.width * 0.05
+    //セル同士の行間
+    flowLayout.minimumLineSpacing = mainView.view.frame.height * 0.05
+    //余白
+    flowLayout.sectionInset = UIEdgeInsets(
+        top: mainView.view.frame.width * 0.05,
+        left: mainView.view.frame.width * 0.05,
+        bottom: mainView.view.frame.width * 0.05,
+        right: mainView.view.frame.width * 0.05
+    )
+    return flowLayout
+}
+
+
 //navigationBarの生成
 public func createNavigationBar(safeAreaHeght:CGFloat) -> UINavigationBar{
     let screenSize: CGRect = UIScreen.main.bounds
@@ -168,3 +202,13 @@ public func createNavigationBar(safeAreaHeght:CGFloat) -> UINavigationBar{
     navBar.barTintColor = .white
     return navBar 
 }
+
+//tableViewの生成
+public func createTableView (width:CGFloat,height:CGFloat,x:CGFloat,y:CGFloat) -> UITableView {
+    let tableView = UITableView()
+    tableView.frame = CGRect(x: x, y: y, width: width, height: height)
+    //セパレーターの色はなし
+    tableView.separatorStyle = .none
+    return tableView
+}
+
