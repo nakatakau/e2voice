@@ -11,6 +11,9 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
     //CollectionView
     var collectionView:UICollectionView?
     
+    //ローディング画面の実装
+    let loadingView = UIView(frame: UIScreen.main.bounds)
+    
     //Menuインスタンスを格納する配列
     var menus:[Menu] = []
     
@@ -94,7 +97,18 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     //FireStoreからデータを取得する処理
     func readMenuFromFireStore(){
+        //ゲージの実装
+        let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        activityIndicator.center = loadingView.center
+        activityIndicator.color = orange
+        activityIndicator.style = UIActivityIndicatorView.Style.large
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.startAnimating()
+        loadingView.addSubview(activityIndicator)
+        self.view.addSubview(loadingView)
+        
         db.collection("menu").getDocuments { (querySnapshot, error) in
+            
             if let err = error {
                 //エラーが発生した際の処理
                 print ("エラー: \(err)")
@@ -104,18 +118,19 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
                     print("\(document.documentID) => \(document.data())")
                     
                     do {
-                        let decodedTask = try Firestore.Decoder().decode(Menu.self, from: document.data())
+                        let decodedMenu = try Firestore.Decoder().decode(Menu.self, from: document.data())
                         //変換に成功
-                        print("decodetask\(decodedTask)")
-                        for _ in 1 ..< 100 {
-                            self.menus.append(decodedTask)
-                        }
-                        self.getUserInfoFromFirestore()
+                        print("decodetask\(decodedMenu)")
+                        self.menus.append(decodedMenu)
                     } catch let error as NSError{
                         print("エラー:\(error)")
                     }
                 }
+                //ローディング画面を閉じる
+                self.loadingView.removeFromSuperview()
             }
+            
+            self.getUserInfoFromFirestore()
             self.collectionView!.reloadData()
         }
     }
@@ -161,6 +176,7 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     @objc func segueMainMenu(){
+        self.loadingView.removeFromSuperview()
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -168,6 +184,7 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @objc func seguePurchase(){
         let nextVC = storyboard?.instantiateViewController(identifier: "PurchaseView") as! PurchaseViewController
         nextVC.modalPresentationStyle =  .fullScreen
+        self.loadingView.removeFromSuperview()
         self.present(nextVC, animated: true, completion: nil)
     }
     

@@ -35,8 +35,8 @@ class PurchaseTableViewCell: UITableViewCell {
     }
 
     //セットアップを行う処理
-    func setupContents(image:UIImage,title:String,purchaseNumber:String,price:String) {
-        menuImg.image = image
+    func setupContents(image:UIImage?,title:String,purchaseNumber:String,price:String) {
+        menuImg.image = image ?? UIImage(named: "")
         menuImg.frame = CGRect(x:contentView.frame.height * 0.05, y:contentView.frame.height * 0.05,width: contentView.frame.height * 0.9, height: contentView.frame.height * 0.9)
         menuTitle.text = title
         menuTitle.font = smallFontSize

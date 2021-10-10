@@ -130,6 +130,7 @@ class OrderViewController: UIViewController, UICollectionViewDelegate, UICollect
                     self.purchase.number = Int(purchaseNumber)
                     self.purchase.title  = self.menu[0].title
                     self.purchase.price  = self.menu[0].price
+                    self.purchase.imgName = self.menu[0].imgName
                     
                     //purchaseDataの中に同一の商品があれば
                     if self.purchaseData.filter({ $0.title == self.purchase.title }).count > 0  {
@@ -142,6 +143,7 @@ class OrderViewController: UIViewController, UICollectionViewDelegate, UICollect
                     }else{
                         self.purchaseData.append(self.purchase)
                     }
+                    
                     print("😃")
                     print(self.purchaseData)
                     UserDefault.savePurchaseData(self.purchaseData)
